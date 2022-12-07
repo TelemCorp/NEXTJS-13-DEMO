@@ -1,6 +1,10 @@
 import React from "react";
 
-function TodosList() {
+const fetchTodos = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos/");
+};
+
+async function TodosList() {
   const todos = await fetchTodos();
 
   return <div>TodosList</div>;
